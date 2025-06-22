@@ -1,3 +1,5 @@
+properties
+
 # Audio
 audio.deep_buffer.media=true
 audio.offload.video=true
