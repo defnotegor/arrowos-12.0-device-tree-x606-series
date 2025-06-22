@@ -1,8 +1,17 @@
-//
-// Copyright (C) 2022 The LineageOS Project
-//
-// SPDX-License-Identifier: Apache-2.0
-//
-
-soong_namespace {
+// Android.bp
+cc_prebuilt_library_shared {
+    name: "libmtk_symbols",
+    target: {
+        android_arm: {
+            srcs: ["libshims/libmtk_symbols.so"],
+        },
+        android_arm64: {
+            srcs: ["libshims/libmtk_symbols64.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
 }
