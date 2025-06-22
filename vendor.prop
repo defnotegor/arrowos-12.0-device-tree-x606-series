@@ -1,4 +1,6 @@
-properties# Audio
+properties
+
+# Audio
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 vendor.audiohal.telephonytx.type=2
